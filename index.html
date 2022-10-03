@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Mi Porfolio Web</title>
+        
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/bca6565936.js" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+
+    <!-- Example Code -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar">
+                    <img src="assets/image/APLogo-20-20.png" alt="Logo de Argentina Programa" class="logo">
+                </a>
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item">
+                        <a href="#" title=".">
+                            <i class="fa-brands fa-instagram fa-2xl"></i>
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" title=".">
+                            <i class="fa-brands fa-twitter fa-2xl"></i>
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" title=".">
+                            <i class="fa-brands fa-linkedin fa-2xl"></i>
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" title=".">
+                            <i class="fa-brands fa-facebook fa-2xl"></i>
+                        </a>
+                    </li>
+                    <!-- Button trigger modal -->
+                    <li class="list-group-item">
+                        <i class="fa-solid fa-user-lock fa-2xl" type="button" data-toggle="modal" data-target="#exampleModal"></i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+    
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con nadie más..</div>
+                                        </div>
+                                        <div class="row g-3 align-items-center">
+                                            <div class="col-auto">
+                                                <label for="inputPassword6" class="col-form-label">Password</label>
+                                            </div>
+                                            <div class="col-auto">
+                                                <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                                            </div>
+                                            <div class="col-auto">
+                                                <span id="passwordHelpInline" class="form-text">
+                                                    Debe tener entre 8 y 20 caracteres.
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Aceptar</label>
+                                        </div>
+                                    </form>
+                                
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary">Iniciar sesion</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    </header>
+    <section>
+        <div id="carouselExampleInterval" class="carousel slide capa0 banner" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="assets/image/22.jpeg" class="d-block banner bord w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="assets/image/66.jpeg" class="d-block banner bord w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/image/33.jpeg" class="d-block banner bord w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+    </section>
+ 
+    <section id="sobreMi" class="about">
+        
+        <div id="sobre_mi">
+            
+            <div class="container-fluid border rounded-3 capa0">
+                <div class="row mt-3">
+                    <div class="col-3 pos_izq ps-5 capa1">
+                        <img src="assets/image/gato.jpg" class="rounded-circle posImag" alt="..." title="...">
+                        <h2 class="mt-3">Nestor Carretino</h2>
+                        <h4>Full Stack Developer Jr</h4>
+                        <p>
+                        
+                        </p>
+                    </div>
+                    <div class="col-3">
+
+                    </div>
+                
+                    <div class="col-sm-12 col-lg-6 justify-content-end px-5" >
+                        <h2 class="p">Acerca de mi</h2>
+                        <figure class="mt-4 text-end">
+                            <blockquote class="blockquote">
+                                <p>Hola soy Nestor de Banfield provincia de Buenos Aires, en busqueda de nuevos desafios.</p>
+                                <p>Dispongo de muchos años de experiencia en gestión de compras en los rubros manufactureros y seguridad electrónica, como además en el sector de almacenes, logística y expedición. Gran conocimiento de la legislatura nacional. Persona habituada en gestionar contratos y supervisar compras a gran escala. Dinámico, metódico y enérgico en la consecución de los objetivos marcados. Buenas dotes comunicativas y excelente habilidades como negociador y gestión de ahorros.</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                              Someone famous in <cite title="Source Title">Source Title</cite>
+                            </figcaption>
+                        </figure>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div id="laboral" class="about1">
+            <div class="container-fluid border rounded-3">
+                <div class="row mt-4">
+                    <div class="col-4 pos_izq blockquote1">
+                        <h2>Experiencia Laboral</h2>
+                        <br>
+                        <div>
+                            <img src="assets/image/prosegur-logo.png" class="w-25" alt="..." title="...">
+                        </div>
+                        <h3>Prosegur S.A. - Xiden S.A.</h3>
+                        <h6>Jefe de Compras / Jefe de Almacenes y Logística</h6>
+                        <p>
+                            2007 - 2018 
+                        </p>
+                    </div>
+                    <div class="col-1">
+
+                    </div>
+
+                    <div class="col-sm-12 col-lg-6 ps-5" >
+                        <figure class="mt-4 text-end">
+                            <blockquote class="blockquote blockquote1">
+                                <p> ●	Xiden S.A. hasta unificación con Prosegur S.A., me desempeñaba como comprador Sr, llegando luego a Jefe de Compras. ●	Negociación sobre condiciones y tiempos de pago con proveedores. ●	Búsqueda, comparación, evaluación y elección de proveedores. ●	Gestión de existencias y control de pedidos recibidos. ●	Responsable de compra de componentes y repuestos de fabricación a escala. ●	Luego de la unificación de empresas tome el cargo de Jefe de Almacenes y Logística de las empresas de Tecnología (XIDEN S.A., PROSEGUR TECNOLOGIA, GENERAL INDUSTRIES Y TELLEX). ●	Ingreso de Órdenes de compra, generación de etiquetas de productos. ●	Control de artículos ABC. ●	Generación de Máximos y Mínimos. ●	Despacho a clientes. ●	Realización de inventarios total en forma semestral y ABC mensualmente. ●	Auditorías internas y Externas (KPMG), dando siempre ratios mínimos o nulos. ●	Coordinación de pedidos con proveedores. ●	Control de calidad de mercancías recibidas. ●	Contratación de fletes y seguros. ●	Tareas administrativas departamento de compras. ●   Reclamo por artículos defectuosos a proveedores. </p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                                Someone famous in <cite title="Source Title">Source Title</cite>
+                            </figcaption>
+                        </figure>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="row mt-4">
+                    <div class="col-4 pos_izq blockquote1 justify-content-start ps-md-5">
+                        
+                        <br>
+                        <div>
+                            <img src="assets/image/logo Macreodent S.A..png" class="w-50" alt="..." title="...">
+                        </div>
+                        <h3>MACRODENT S.A.</h3>
+                        <h6>Jefe de Compras</h6>
+                        <p>
+                            2002 – 2007 
+                        </p>
+                    </div>
+
+                    <div class="col-1">
+                    </div>
+                    <div class="col-sm-12 col-lg-6 ps-5" >
+                        <figure class="mt-4 text-start">
+                            <blockquote class="blockquote blockquote1">
+                                <p> ●	Desarrollo e implementación de objetivos y planes. ●	Programación de compras nacionales e internacionales, solicitud y análisis de cotizaciones, evaluación de proveedores, evaluación de laboratorios, control de stock mínimos vs planificación de producción, recepción de mercadería en tiempo y forma, cumplimiento en sistema de gestión. ●	Revisión del plan de compras al fin del periodo programado. Compras productivas y no productivas: máquinas, dispositivos y repuestos ( lectura y comprensión de planos), packaging, desarrollo del diseño del arte de los productos, insumos, etc.. ●	En la gestión se logro reducir los costos principalmente en lo que respecta al packaging en referencia al envasado y etiquetado, encontrando proveedores alternativos sin descuidar la calidad de los mismos. ●	Calidad y procedimientos I.S.O. 9001:2000 y Certificación CE. ●	Otras responsabilidades: Intendencia, Mantenimiento edilicio, seguimiento de contratistas, Comedor. ●	Presentación de Proyectos a organismos.</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                                Someone famous in <cite title="Source Title">Source Title</cite>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <hr>
+                <div class="row mt-4">
+                    <div class="col-4 pos_izq blockquote1">
+                        
+                        <br>
+                        <div>
+                            <img src="assets/image/Telecentro-logo.jpg" class="w-50" alt="..." title="...">
+                        </div>
+                        <h3>TELECENTRO S.A </h3>
+                        <h6>Jefe de Instalaciones </h6>
+                        <p>
+                            1999 – 2001
+                        </p>
+                    </div>
+                    <div class="col-1">
+
+                    </div>
+                
+                    <div class="col-7 col-sm-12 col-lg-6 px-5" >
+                        <figure class="mt-4 text-end">
+                            <blockquote class="blockquote blockquote1">
+                                <p> ●	 Coordinador de Capital Federal. ●  El plantel constaba  de aproximadamente 80 personas de las cuales 68 eran técnicos y 12 administrativos. ●	 Normas de Calidad y procedimientos. </p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                                Someone famous in <cite title="Source Title">Source Title</cite>
+                            </figcaption>
+                        </figure>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="row mt-4">
+                    <div class="col-4 pos_izq blockquote1 justify-content-start ps-md-5">
+                        <br>
+                        <div>
+                            <img src="assets/image/logo de Multicanal.png" class="w-50" alt="..." title="...">
+                        </div>
+                        <h3>MULTICANAL S.A.</h3>
+                        <h6>Jefe Técnico</h6>
+                        <p>
+                            1987 – 1998 
+                        </p>
+                    </div>
+                    <div class="col-1">
+                    </div>
+                    <div class="col-7 col-sm-12 col-lg-6 ps-5" >
+                        <figure class="mt-4 text-start">
+                            <blockquote class="blockquote blockquote1">
+                                <p> ●	Coordinador de los Partidos de Avellaneda, Lanus, Quilmes, Berazategui, Lomas de Zamora, Esteban Echeverría, Ezeiza, Almirante Brown, Presidente Perón y San Vicente. ●	  El plantel constaba de aproximadamente 300 personas de las cuales 250 eran técnicos y 50 administrativos. ●  Red, service, instalaciones, desconexiones, diseño, auditoria Gral. C.C.T.V. Fibra óptica. Normas de Calidad y procedimientos. </p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                                Someone famous in <cite title="Source Title">Source Title</cite>
+                            </figcaption>
+                        </figure>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="row mt-4">
+                    <div class="col-4 pos_izq blockquote1">
+                        
+                        <br>
+                        <div>
+                            <img src="assets/image/Logo CV.jpg" class="w-50" alt="..." title="...">
+                        </div>
+                        <h3>Cablevisión S.A.</h3>
+                        <h6>Técnico </h6>
+                        <p>
+                            1985 - 1987
+                        </p>
+                    </div>
+                    <div class="col-1">
+
+                    </div>
+                
+                    <div class="col-7 col-sm-12 col-lg-6 ps-5" >
+                        <figure class="mt-4 text-end">
+                            <blockquote class="blockquote blockquote1">
+                                <p> ●	 Técnico de red y construcciones. </p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                                Someone famous in <cite title="Source Title">Source Title</cite>
+                            </figcaption>
+                        </figure>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div id="educacion" class="about1">
+            <div class="container-fluid border rounded-3">
+                <div class="row mt-4">
+                    <div class="col-4 pos_izq mt-1 blockquote1">
+                        <h2>Educacion</h2>
+                        <br>
+                        <div>
+                            <img src="assets/image/APLogo-20-22.png" class="tam_imag" alt="..." title="Logo Argentina Programa">
+                        </div>
+                    </div>
+                    <div class="col-1">
+                    </div>
+                    <div class="col-7 col-md-6" >
+                        <figure class="mt-4 text-end">
+                            <blockquote class="blockquote blockquote1">
+                                <h3>Argentina Programa</h3>
+                                <h4>Yo Programo</h4>
+                                <h5>Full Stack Development Jr</h5>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                                <cite title="Source Title">Actualmente en curso</cite>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <div class="row mt-4">
+                    <div class="col-4 pos_izq blockquote1">
+                        <h2></h2>
+                        <br>
+                        <div>
+                            <img src="assets/image/Logo_UTN_av.png" class="w-25" alt="..." title="Logo UTN Avellaneda">
+                        </div>
+                    </div>
+                    <div class="col-1">
+                    </div>
+                    <div class="col-7 col-md-6" >
+                        <figure class="mt-4 text-end">
+                            <blockquote class="blockquote blockquote1">
+                                <h3>Universidad Tecnologica Nacional</h3>
+                                <h4>Facultad Regional Avellaneda</h4>
+                                <h5>Ingenieria Electronica</h5>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                                <cite title="Source Title">Se adeudan finales</cite>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <br>
+                <hr>
+
+                <div class="row mt-4">
+                    <div class="col-4 pos_izq blockquote1">
+                        <h2></h2>
+                        <br>
+                        <div>
+                            <img src="assets/image/Logo_ENET_N3_Salvador_Debenedetti.png" class="w-25" alt="..." title="Logo NETlNs5Salvador Debenedetti">
+                        </div>
+                    </div>    
+                    <div class="col-1">
+                    </div>
+                    <div class="col-7 col-md-6" >
+                        <figure class="mt-4 text-end">
+                            <blockquote class="blockquote blockquote1">
+                                <h3></h3>
+                                <h4>ENET N° 3 Salvador Debenedetti</h4>
+                                <h4>Avellaneda</h4>
+                                <h5>Tecnico Electronico</h5>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                                <cite title="Source Title"></cite>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <br>
+                <br>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div id="Hard_&_Soft_Skills" class="about">
+            <div class="border rounded-3">
+                <div class="row mt-4 ps-5">
+                    <h2>Hard & Soft Skills</h2>
+                    <!--<div class="col-2 ps-5">
+                    </div>-->
+                    <div class="ps-5 text-start">
+                        <div class="row progre">
+                            <div class="col-3 mb-4">
+                                <h4>Scrum</h4>
+                            </div>
+                            <div class="col-7 col-md mb-4">
+                                <div class="progress">
+                                    <div class="progress-bar barco1 progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                        75%
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col-2 mb-5">
+                            </div>
+                        </div>
+                        <div class="row progre">
+                            <div class="col-3 mb-5">
+                                <h4>GitHub</h4>
+                            </div>
+                            <div class="col-7 col-md mb-5">
+                                <div class="progress">
+                                    <div class="progress-bar barco2 progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                        50%
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col-2 mb-5">
+                           </div> 
+                        </div>
+                        
+                        <div class="row progre">
+                            <div class="col-3 mb-5">
+                                <h4>HTML</h4>
+                            </div>
+                            <div class="col-7 col-md mb-5">
+                                <div class="progress">
+                                    <div class="progress-bar barco7 progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                        60%
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col-2 mb-5">
+                            </div> 
+                        </div>
+                        
+                        <div class="row progre">
+                            <div class="col-3 mb-5">
+                                <h4>CSS</h4>
+                            </div>
+                            <div class="col-7 col-md mb-5">
+                                <div class="progress">
+                                    <div class="progress-bar barco3 progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                                        55%
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col-2 mb-5">
+                            </div> 
+                        </div>
+                        
+                        <div class="row progre">
+                            <div class="col-3 mb-5">
+                                <h4>Bootstrap</h4>
+                            </div>
+                            <div class="col-7 col-md mb-5">
+                                <div class="progress">
+                                    <div class="progress-bar barco4 progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+                                        45%
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col-2 mb-5">
+                            </div> 
+                        </div>
+                        
+                        <div class="row progre">
+                            <div class="col-3 mb-5">
+                                <h4>Typescript</h4>
+                            </div>
+                            <div class="col-7 col-md mb-5">
+                                <div class="progress">
+                                    <div class="progress-bar barco5 progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                        70%
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col-2 mb-5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>                
+    </section>
+
+    <section>
+        <div id="proyecto" class="1">
+            <div class="container-fluid border rounded-3">
+                <div class="row mt-4">
+                    <div class="col-4 pos_izq blockquote1">
+                        <h2>Proyectos</h2>
+                        <br>
+                        <div class="pb-3">
+                            <img src="assets/image/APLogo-20-22.png" class="tam_imag" alt="..." title="Logo Argentina Programa">
+                        </div>
+                        <h3>Proyecto Integrador</h3>
+                        <h6></h6>
+                        <p>
+                            2022 - 2023 
+                        </p>
+                    </div>
+                    <div class="col-1">
+
+                    </div>
+                    
+                    <div class="col-7 col-md-6" >
+                        <figure class="mt-4 text-end">
+                            <blockquote class="blockquote blockquote1">
+                                <p>El objetivo es comenzar con el maquetado web de nuestro proyecto integrador. <br>Sera nuestro Potfolio estatico. Confeccion del index y el dashboard, con el correspondiente login sugerido por Argentina Programa</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                                Someone famous in <cite title="Source Title">Source Title</cite>
+                            </figcaption>
+                        </figure>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- footer start -->
+   <!-- <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-2 text-center wsp">
+                    <a href="https://api.whatsapp.com/send?phone=5491123198095" class="btn-wsp" title="&" rel="noopener" target="_blank">
+                        <i class="fa-brands fa-whatsapp fa-2xl"></i>
+                    </a>
+                </div>
+                <div class="col-sm-8 footer-bottom">
+                    <p>© 2022 Portfolio Personal. Derecho reservado Nestor Carretino</p>
+                </div>
+                <div class="col-2 text-center wsp">
+                    <a href="#" title="." rel="noopener" target="_blank">
+                        <i class="fa-regular fa-envelope fa-2xl pt-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>-->
+    <footer>
+        <div class="card-group">
+            <div class="card text-center wsp">
+                <a href="https://api.whatsapp.com/send?phone=5491123198095" class="btn-wsp" title="&" rel="noopener" target="_blank">
+                    <i class="fa-brands fa-whatsapp fa-2xl"></i>
+                </a>
+            </div>
+            <div class="card footer-bottom px-5">
+                <p>© 2022 Portfolio Personal. <br>Derecho reservado Nestor Carretino</p>
+            </div>
+            <div class="card text-center wsp">
+                <a href="#" title="." rel="noopener" target="_blank">
+                    <i class="fa-regular fa-envelope fa-2xl pt-4"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+    <!-- footer end -->
+
+    
+    
+    <!-- End Example Code -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+  </body>
+</html>

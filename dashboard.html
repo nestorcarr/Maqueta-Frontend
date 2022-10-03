@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/bca6565936.js" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary"> <!--fixed-top-->
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/image/APLogo-20-20.png" alt="Logo de Argentina Programa" class="logo">
+                </a>
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item">
+                        <a href="#" title=".">
+                            <i class="fa-brands fa-instagram fa-2xl"></i>
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" title=".">
+                            <i class="fa-brands fa-twitter fa-2xl"></i>
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" title=".">
+                            <i class="fa-brands fa-linkedin fa-2xl"></i>
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" title=".">
+                            <i class="fa-brands fa-facebook fa-2xl"></i>
+                        </a>
+                    </li>
+                    <!-- Button trigger modal -->
+                    <li class="list-group-item">
+                        <i class="fa-solid fa-user fa-2xl" type="button" data-toggle="modal" data-target="#exampleModal"></i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+    
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con nadie más..</div>
+                                        </div>
+                                        <div class="row g-3 align-items-center">
+                                            <div class="col-auto">
+                                                <label for="inputPassword6" class="col-form-label">Password</label>
+                                            </div>
+                                            <div class="col-auto">
+                                                <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                                            </div>
+                                            <div class="col-auto">
+                                                <span id="passwordHelpInline" class="form-text">
+                                                    Debe tener entre 8 y 20 caracteres.
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Aceptar</label>
+                                        </div>
+                                    </form>
+                                
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary">Iniciar sesion</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    </header>
+    <!--Banner-->
+    <section>
+    <div class="card text-bg-dark banner">
+        <div id="carouselExampleInterval" class="carousel slide capa0" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="assets/image/22.jpeg" class="d-block banner banner2 w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="assets/image/66.jpeg" class="d-block banner banner2 w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/image/33.jpeg" class="d-block banner banner2 w-100" alt="...">
+              </div>
+            </div>
+            <!--<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>-->
+          </div>
+
+        <div class="card-img-overlay">
+            <div class="row">
+                <div class="col-6 posImag2">
+                    <img src="assets/image/gato.jpg" class="rounded-circle posImag3" alt="..." title="...">
+                </div>
+                <div class="col-6 align-items-end justify-content-end pt-5 ">
+                    <!--<div class="col-auto">-->
+                        <a href="#" class="icon2 pe-5" title=".">
+                            <i class="fa-sharp fa-solid fa-pencil fa-2xl align-items-end icon3"></i>
+                        </a>
+                   <!-- </div>-->
+                </div>
+                
+                
+                
+                <!--<div class="col-sm-6 col-6 icon0">
+                    <a href="#" title=".">
+                        <i class="fa-sharp fa-solid fa-pencil fa-2xl align-items-end icon3"></i>
+                    </a>-->
+                    <!--<ul class="list-group list-group-horizontal">
+                        <li class="list-group-item">
+                            <a href="#" title=".">
+                                <i class="fa-sharp fa-solid fa-pencil fa-2xl align-content-end icon3"></i>
+                            </a>
+                        </li>
+                    </ul>-->
+                </div>
+                  
+            </div>
+        </div>
+    </div>
+     
+    </section>   
+<!--Dashboard Barra lateral-->  
+
+    <section id="panelControl" class="panelControl">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="d-flex align-items-start my-3">
+                    <div class="nav flex-column col-3 nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Datos Personales</button>
+                        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Experiencia Laboral</button>
+                        <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">Educacion</button>
+                        <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Hard & Soft Skills</button>
+                        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Proyectos</button>
+                    </div>
+                    <div class="tab-content col-9 text-white" id="v-pills-tabContent">
+                        <!--Datos Personales-->
+                        <div class="tab-pane fade show active mx-5" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                            <h4></h4>
+                            <section id="sobreMi" class="about">
+        
+                                <div id="sobre_mi">
+                                    
+                                    <div class="container-fluid border rounded-3">
+                                        <div class="row justify-content-center mt-3">
+                                            <div class="col-auto text-center">
+                                                <ul class="list-group list-group-horizontal">
+                                                    <li class="list-group-item">
+                                                        <a href="#" title=".">
+                                                            <i class="fa-sharp fa-solid fa-pencil fa-2xl align-items-end pt-3 ps-2 icon"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <a href="#" title=".">
+                                                            <i class="fa-sharp fa-solid fa-trash fa-2xl align-items-end pt-3"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <a href="#" title=".">
+                                                            <i class="fa-sharp fa-solid fa-plus fa-2xl align-items-end pt-3 px-0"></i>                                                        
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                                                   
+                                        <div class="row mt-3">
+                                            <div class="col-4 pos_izq ps-4 pt-3">
+                                                <h2>Nestor Carretino</h2>
+                                                <h5>Full Stack Developer Jr</h5>
+                                                <p>
+                                                
+                                                </p>
+                                            </div>
+                                            <div class="col-2">
+                                                <a href="#" title=".">
+                                                       <i class="fa-sharp fa-solid fa-pencil fa-2xl align-items-end pt-5 ps-2 icon"></i>
+                                                </a>
+                                            </div>
+                                        
+                                            <div class="col-sm-12 col-md-6 justify-content-md-end" >
+                                                <figure class="mt-4 text-end">
+                                                    <blockquote class="blockquote">
+                                                        <p>Hola soy Nestor de Banfield provincia de Buenos Aires, en busqueda de nuevos desafios.</p>
+                                                        <p>Dispongo de muchos años de experiencia en gestión de compras en los rubros manufactureros y seguridad electrónica, como además en el sector de almacenes, logística y expedición. Gran conocimiento de la legislatura nacional. Persona habituada en gestionar contratos y supervisar compras a gran escala. Dinámico, metódico y enérgico en la consecución de los objetivos marcados. Buenas dotes comunicativas y excelente habilidades como negociador y gestión de ahorros.</p>
+                                                    </blockquote>
+                                                    <figcaption class="blockquote-footer">
+                                                        Someone famous in <cite class="figcap" title="Source Title">Source Title</cite>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+
+                            <button type="button" class="btn btn-success mt-2">Guardar</button>
+                        </div>
+                        <!--Experiencia Laboral-->
+                        <div class="tab-pane fade mx-5" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                            <h4></h4>
+                            <section id="laboral" class="about">
+        
+                                <div id="laboral1">
+                                    
+                                    <div class="container-fluid border rounded-3">
+                                        <div class="row justify-content-center mt-3">
+                                            <div class="col-auto text-center">
+                                                <ul class="list-group list-group-horizontal">
+                                                    <li class="list-group-item">
+                                                        <a href="#" title=".">
+                                                            <i class="fa-sharp fa-solid fa-pencil fa-2xl align-items-end pt-3 ps-2 icon"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <a href="#" title=".">
+                                                            <i class="fa-sharp fa-solid fa-trash fa-2xl align-items-end pt-3"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <a href="#" title=".">
+                                                            <i class="fa-sharp fa-solid fa-plus fa-2xl align-items-end pt-3 px-0"></i>                                                        
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+
+
+
+                                        <div class="row mt-3">
+                                            
+                                            <div class="col-4 pos_izq ps-4 pt-3">
+                                                <div>
+                                                    <img src="assets/image/prosegur-logo.png" class="tam_imag2" alt="..." title="...">
+                                                </div>
+                                                <h2>Prosegur S.A. - Xiden S.A.</h2>
+                                                <h5>Jefe de Compras / Jefe de Almacenes y Logística</h5>
+                                                <p>
+                                                    2007 - 2018
+                                                </p>
+                                            </div>
+                                            
+                                        
+                                            <div class="col-sm-12 col-md-8 justify-content-end" >
+                                                <figure class="mt-4">
+                                                    <blockquote class="blockquote">
+                                                        <p> ●	Xiden S.A. hasta unificación con Prosegur S.A., me desempeñaba como comprador Sr, llegando luego a Jefe de Compras. ●	Negociación sobre condiciones y tiempos de pago con proveedores. ●	Búsqueda, comparación, evaluación y elección de proveedores. ●	Gestión de existencias y control de pedidos recibidos. ●	Responsable de compra de componentes y repuestos de fabricación a escala. ●	Luego de la unificación de empresas tome el cargo de Jefe de Almacenes y Logística de las empresas de Tecnología (XIDEN S.A., PROSEGUR TECNOLOGIA, GENERAL INDUSTRIES Y TELLEX). ●	Ingreso de Órdenes de compra, generación de etiquetas de productos. ●	Control de artículos ABC. ●	Generación de Máximos y Mínimos. ●	Despacho a clientes. ●	Realización de inventarios total en forma semestral y ABC mensualmente. ●	Auditorías internas y Externas (KPMG), dando siempre ratios mínimos o nulos. ●	Coordinación de pedidos con proveedores. ●	Control de calidad de mercancías recibidas. ●	Contratación de fletes y seguros. ●	Tareas administrativas departamento de compras. ●   Reclamo por artículos defectuosos a proveedores. </p>
+                                                    </blockquote>
+                                                    <figcaption class="blockquote-footer">
+                                                      Someone famous in <cite class="figcap" title="Source Title">Source Title</cite>
+                                                    </figcaption>
+                                                </figure>
+                                                <hr>
+                        
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            
+                                            <div class="col-4 pos_izq ps-4 pt-3">
+                                                <div>
+                                                    <img src="assets/image/logo Macreodent S.A..png" class="tam_imag2" alt="..." title="...">
+                                                </div>
+                                                <h2>Macrodent S.A.</h2>
+                                                <h5>Jefe de Compras</h5>
+                                                <p>
+                                                    2002 - 2007
+                                                </p>
+                                            </div>
+                                            
+                                        
+                                            <div class="col-sm-12 col-md-8 justify-content-end" >
+                                                
+                                                
+                                                <figure class="mt-4 text-end">
+                                                    <blockquote class="blockquote">
+                                                        <p> ●	Desarrollo e implementación de objetivos y planes. ●	Programación de compras nacionales e internacionales, solicitud y análisis de cotizaciones, evaluación de proveedores, evaluación de laboratorios, control de stock mínimos vs planificación de producción, recepción de mercadería en tiempo y forma, cumplimiento en sistema de gestión. ●	Revisión del plan de compras al fin del periodo programado. Compras productivas y no productivas: máquinas, dispositivos y repuestos ( lectura y comprensión de planos), packaging, desarrollo del diseño del arte de los productos, insumos, etc.. ●	En la gestión se logro reducir los costos principalmente en lo que respecta al packaging en referencia al envasado y etiquetado, encontrando proveedores alternativos sin descuidar la calidad de los mismos. ●	Calidad y procedimientos I.S.O. 9001:2000 y Certificación CE. ●	Otras responsabilidades: Intendencia, Mantenimiento edilicio, seguimiento de contratistas, Comedor. ●	Presentación de Proyectos a organismos.</p>
+                                                    </blockquote>
+                                                    <figcaption class="blockquote-footer">
+                                                      Someone famous in <cite class="figcap" title="Source Title">Source Title</cite>
+                                                    </figcaption>
+                                                </figure>
+                                                <hr>
+                        
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            
+                                            <div class="col-4 pos_izq ps-4 pt-3">
+                                                <div>
+                                                    <img src="assets/image/Telecentro-logo.jpg" class="tam_imag2" alt="..." title="...">
+                                                </div>
+                                                <h2>Telecentro S.A.</h2>
+                                                <h5>Jefe de Instalaciones</h5>
+                                                <p>
+                                                    1999 – 2001
+                                                </p>
+                                                <br>
+                                            </div>
+                                            
+                                        
+                                            <div class="col-sm-12 col-md-8 justify-content-end" >
+                                                <br>
+                                                
+                                                <figure class="mt-4">
+                                                    <blockquote class="blockquote">
+                                                        <p> ●	 Coordinador de Capital Federal. ●  El plantel constaba  de aproximadamente 80 personas de las cuales 68 eran técnicos y 12 administrativos. ●	 Normas de Calidad y procedimientos. </p>
+                                                    </blockquote>
+                                                    <figcaption class="blockquote-footer">
+                                                      Someone famous in <cite class="figcap" title="Source Title">Source Title</cite>
+                                                    </figcaption>
+                                                </figure>
+                                                <br>
+                                                <hr>
+                        
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        <div class="row mt-3">
+                                            
+                                            <div class="col-4 pos_izq ps-4 pt-3">
+                                                <div>
+                                                    <img src="assets/image/logo de Multicanal.png" class="tam_imag2" alt="..." title="...">
+                                                </div>
+                                                <h2>Multicanal S.A.</h2>
+                                                <h5>Jefe Técnico</h5>
+                                                <p>
+                                                    1987 – 1998 
+                                                </p>
+                                            </div>
+                                            
+                                        
+                                            <div class="col-sm-12 col-md-8 justify-content-end" >
+                                                
+                                                
+                                                <figure class="mt-4 text-end">
+                                                    <blockquote class="blockquote">
+                                                        <p> ●	Coordinador de los Partidos de Avellaneda, Lanus, Quilmes, Berazategui, Lomas de Zamora, Esteban Echeverría, Ezeiza, Almirante Brown, Presidente Perón y San Vicente. ●	  El plantel constaba de aproximadamente 300 personas de las cuales 250 eran técnicos y 50 administrativos. ●  Red, service, instalaciones, desconexiones, diseño, auditoria Gral. C.C.T.V. Fibra óptica. Normas de Calidad y procedimientos. </p>
+                                                    </blockquote>
+                                                    <figcaption class="blockquote-footer">
+                                                      Someone famous in <cite class="figcap" title="Source Title">Source Title</cite>
+                                                    </figcaption>
+                                                </figure>
+                                                <hr>
+                        
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            
+                                            <div class="col-4 pos_izq ps-4 pt-3">
+                                                <div>
+                                                    <img src="assets/image/Logo CV.jpg" class="tam_imag2" alt="..." title="...">
+                                                </div>
+                                                <h2>Cablevisión S.A.</h2>
+                                                <h5>Técnico</h5>
+                                                <p>
+                                                    1985 - 1987 
+                                                </p>
+                                                <br>
+                                            </div>
+                                            
+                                        
+                                            <div class="col-sm-12 col-md-8 justify-content-end" >
+                                                <br>
+                                                <br>
+                                                
+                                                <figure class="mt-4 ps-5">
+                                                    <blockquote class="blockquote">
+                                                        <p> ●  Técnico de red y construcciones. </p>
+                                                    </blockquote>
+                                                    <figcaption class="blockquote-footer">
+                                                      Someone famous in <cite class="figcap" title="Source Title">Source Title</cite>
+                                                    </figcaption>
+                                                </figure>
+                                                <br>
+                                                <br>
+                                                <br>
+                                                                        
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </section>
+                            
+                            <button type="button" class="btn btn-outline-primary my-2">Guardar</button> 
+   
+                        </div>
+                        <!--Educacion-->
+                        <div class="tab-pane fade mx-5" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">
+                            <h4></h4>
+                            <section id="educacion" class="about">
+        
+                                <div id="educacion1">
+                                    
+                                    <div class="container-fluid border rounded-3">
+                                        <div class="row justify-content-center mt-3">
+                                            <div class="col-auto text-center">
+                                                <ul class="list-group list-group-horizontal">
+                                                    <li class="list-group-item">
+                                                        <a href="#" title=".">
+                                                            <i class="fa-sharp fa-solid fa-pencil fa-2xl align-items-end pt-3 ps-2 icon"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <a href="#" title=".">
+                                                            <i class="fa-sharp fa-solid fa-trash fa-2xl align-items-end pt-3"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <a href="#" title=".">
+                                                            <i class="fa-sharp fa-solid fa-plus fa-2xl align-items-end pt-3 px-0"></i>                                                        
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <!--<div class="col-sm-12 col-md-8 justify-content-end">-->
+    
+                                            <div class="col-4 pos_izq ps-4 pt-5">
+                                                
+                                                <div>
+                                                    <img src="assets/image/APLogo-20-22.png" class="tam_imag" alt="..." title="Logo Argentina Programa">
+                                                </div>
+                                                <p></p>
+                                            </div>
+                                            
+                                        
+                                            <div class="col-sm-12 col-md-8 justify-content-end" >
+                                              
+                                                <figure class="mt-4 text-end">
+                                                    <blockquote class="blockquote">
+                                                        <h2>Argentina Programa</h2>
+                                                        <h4>Yo Programo</h4>
+                                                        <h5>Full Stack Development Jr</h5>
+            
+                                                    </blockquote>
+                                                    <figcaption class="blockquote-footer">
+                                                        <cite class="figcap" title="Source Title">Actualmente en curso</cite>
+                                                    </figcaption>
+                                                </figure>
+                                                <hr>
+                        
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            
+                                            <div class="col-4 pos_izq ps-4 pt-5">
+                                                
+                                                <div>
+                                                    <img src="assets/image/Logo_UTN_av.png" class="tam_imag" alt="..." title="Logo UTN Avellaneda">
+                                                </div>
+                                                <p></p>
+                                            </div>
+                                            
+                                        
+                                            <div class="col-sm-12 col-md-8 justify-content-end" >
+                                                                                                                                              
+                                                <figure class="mt-4 text-end">
+                                                    <blockquote class="blockquote">
+                                                        <h2>Universidad Tecnologica Nacional</h2>
+                                                        <h4>Facultad Regional Avellaneda</h4>
+                                                        <h5>Ingenieria Electronica</h5>
+            
+                                                    </blockquote>
+                                                    <figcaption class="blockquote-footer">
+                                                        <cite class="figcap" title="Source Title">Se adeudan finales</cite>
+                                                    </figcaption>
+                                                </figure>
+                                                <hr>
+                        
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            
+                                            <div class="col-4 pos_izq ps-4 pt-5">
+                                                
+                                                <div>
+                                                    <img src="assets/image/Logo_ENET_N3_Salvador_Debenedetti.png" class="tam_imag1" alt="..." title="Logo NETlNs5Salvador Debenedetti">
+                                                </div>
+                                                <p></p>
+                                            </div>
+                                            
+                                        
+                                            <div class="col-sm-12 col-md-8 justify-content-end" >
+                                                                                                                                              
+                                                <figure class="mt-4 text-end">
+                                                    <blockquote class="blockquote">
+                                                        <h2>ENET N° 3 Salvador Debenedetti</h2>
+                                                        <h4>Avellaneda</h4>
+                                                        <h5>Tecnico Electronico</h5>
+            
+                                                    </blockquote>
+                                                    <figcaption class="blockquote-footer">
+                                                        <cite class="figcap" title="Source Title"></cite>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </section>
+
+                            <button type="button" class="btn btn-success mt-2">Guardar</button>
+                        </div>
+                        <!--Hard & Soft Skills-->
+                        <div class="tab-pane fade mx-3" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
+                            <h4></h4>
+                            <section id="habilidades" class="about">
+        
+                                <div id="habilidades1">
+                                    <div class="container-fluid border rounded-3"> 
+                                        <div class="row justify-content-center mt-3">
+                                            <div class="col-auto text-center">
+                                                <ul class="list-group list-group-horizontal">
+                                                    <li class="list-group-item">
+                                                        <a href="#" title=".">
+                                                            <i class="fa-sharp fa-solid fa-pencil fa-2xl align-items-end pt-3 ps-2 icon"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <a href="#" title=".">
+                                                            <i class="fa-sharp fa-solid fa-trash fa-2xl align-items-end pt-3"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <a href="#" title=".">
+                                                            <i class="fa-sharp fa-solid fa-plus fa-2xl align-items-end pt-3 px-0"></i>                                                        
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                        
+
+                                        <div class="row progre mt-3 px-4">
+                                            <div class="col-4 col-md mb-3">
+                                                <h4>Scrum</h4>
+                                            </div> 
+                                            <div class="col-8 col-md mb-3">
+                                                <div class="progress">
+                                                    <div class="progress-bar barco1 progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                        75%
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        <div class="row progre mt-3 px-4">
+                                            <div class="col-4 col-md mb-3">
+                                                <h4>GitHub</h4>
+                                            </div> 
+                                            <div class="col-8 col-md mb-3">
+                                                <div class="progress">
+                                                    <div class="progress-bar barco2 progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                                        50%
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                       
+                                        <div class="row progre mt-3 px-4">
+                                            <div class="col-4 col-md mb-3">
+                                                <h4>HTML</h4>
+                                            </div> 
+                                            <div class="col-8 col-md mb-3">
+                                                <div class="progress">
+                                                    <div class="progress-bar barco7 progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                                        60%
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div>
+
+                                        <div class="row progre mt-3 px-4">
+                                            <div class="col-4 col-md mb-3">
+                                                <h4>CSS</h4>
+                                            </div> 
+                                            <div class="col-8 col-md mb-3">
+                                                <div class="progress">
+                                                    <div class="progress-bar barco3 progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                                                        55%
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div>
+
+                                        <div class="row progre mt-3 px-4">
+                                            <div class="col-4 col-md mb-3">
+                                                <h4>Bootstrap</h4>
+                                            </div> 
+                                            <div class="col-8 col-md mb-3">
+                                                <div class="progress">
+                                                    <div class="progress-bar barco4 progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+                                                        45%
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row progre mt-3 px-4">
+                                            <div class="col-4 col-md mb-3">
+                                                <h4>Typescript</h4>
+                                            </div> 
+                                            <div class="col-8 col-md mb-3">
+                                                <div class="progress">
+                                                    <div class="progress-bar barco5 progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                                        70%
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div>
+
+                                        <div class="container px-4">
+                                            <div class="row progres">
+                                                <div class="col-6 col-md mb-4">
+                                                    <h4>Ingles - Escrito</h4>
+                                                    <div class="progress">
+                                                        <div class="progress-bar barco6a progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                                            60%
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                                <div class="col-6 col-md mb-4">
+                                                    <h4>Ingles - Oral</h4>
+                                                    <div class="progress">
+                                                        <div class="progress-bar barco6b progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                                                            30%
+                                                        </div>
+                                                    </div> 
+                                                </div> 
+                                                <!--<div class="col-4 col-md mb-5">
+                                                </div>-->
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+                            </section>
+                            <button type="button" class="btn btn-outline-primary my-2">Guardar</button> 
+                        </div>
+                        <!--Proyectos-->
+                        <div class="tab-pane fade mx-3" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
+                            <h4></h4>
+                            <section id="proyecto" class="about">
+        
+                                <div id="proyecto1">
+                                    <div class="container-fluid border rounded-3">
+                                        <div class="row justify-content-center mt-3">
+                                            <div class="col-auto text-center">
+                                                <ul class="list-group list-group-horizontal">
+                                                    <li class="list-group-item">
+                                                        <a href="#" title=".">
+                                                            <i class="fa-sharp fa-solid fa-pencil fa-2xl align-items-end pt-3 ps-2 icon"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <a href="#" title=".">
+                                                            <i class="fa-sharp fa-solid fa-trash fa-2xl align-items-end pt-3"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <a href="#" title=".">
+                                                            <i class="fa-sharp fa-solid fa-plus fa-2xl align-items-end pt-3 px-0"></i>                                                        
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    
+                                 
+                                        <div class="row mt-3">
+                                            <div class="col-4 pos_izq ps-4 pt-5">
+                                                <div>
+                                                    <a href="#">
+                                                        <img src="assets/image/APLogo-20-22.png" class="tam_imag" alt="..." title="Logo Argentina Programa">
+                                                    </a>
+                                                </div>
+                                                <p></p>
+                                            </div>
+                   
+                                            <div class="col-sm-12 col-md-8 justify-content-end" >
+                                                
+                                             <!--   <div class="">
+                                                    <ul class="list-group list-group-horizontal micon2">
+                                                        <li class="list-group-item">
+                                                            <a href="#" title=".">
+                                                                <i class="fa-sharp fa-solid fa-pencil fa-2xl align-items-end pt-3 ps-2 icon"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <a href="#" title=".">
+                                                                <i class="fa-sharp fa-solid fa-trash fa-2xl align-items-end pt-3"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <a href="#" title=".">
+                                                                <i class="fa-sharp fa-solid fa-plus fa-2xl align-items-end pt-3 px-0"></i>                                                        
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>-->
+                                                
+                                                <figure class="mt-4">
+                                                    <blockquote class="blockquote">
+                                                        <h2>Argentina Programa</h2>
+                                                        <h4>Proyecto Integrador</h4>
+                                                        <h5>Full Stack Development Jr</h5>
+                                                            <p>2022 - 2023 </p>
+                                                            <p>El objetivo es comenzar con el maquetado web de nuestro proyecto integrador. <br>Sera nuestro Potfolio estatico. Confeccion del index y el dashboard, con el correspondiente login sugerido por Argentina Programa</p>
+                                                    </blockquote>
+                                                    <figcaption class="blockquote-footer">
+                                                        <cite class="figcap" title="Source Title">Actualmente en curso</cite>
+                                                    </figcaption>
+                                                </figure>
+                                                                        
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-success mt-2">Guardar</button>
+
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer start -->
+    <footer>
+        <div class="card-group">
+            <div class="card text-center wsp">
+                <a href="https://api.whatsapp.com/send?phone=5491123198095" class="btn-wsp" title="&" rel="noopener" target="_blank">
+                    <i class="fa-brands fa-whatsapp fa-2xl"></i>
+                </a>
+            </div>
+            <div class="card footer-bottom px-5">
+                <p>© 2022 Portfolio Personal. <br>Derecho reservado Nestor Carretino</p>
+            </div>
+            <div class="card text-center wsp">
+                <a href="#" title="." rel="noopener" target="_blank">
+                    <i class="fa-regular fa-envelope fa-2xl pt-4"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+
+    <!-- footer end -->
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
